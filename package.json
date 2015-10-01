@@ -1,0 +1,11 @@
+{
+  "name": "kubernetes-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/index.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
