@@ -1,4 +1,4 @@
-FROM nodesource/trusty:4.1.0
+FROM nodesource/trusty:4.2.1
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV NODE_ENV development

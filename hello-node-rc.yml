@@ -3,25 +3,25 @@ apiVersion: v1
 kind: ReplicationController
 
 metadata:
-  name: hello-node-rc-v11
+  name: hello-node-rc-v2
 
 spec:
   replicas: 2
   selector:
     app: hello-node
-    awesome: app
+    deployment: v2
 
   template:
     metadata:
       labels:
         app: hello-node
-        awesome: app
+        deployment: v2
 
     spec:
       restartPolicy: Always
       containers:
         - name: hello-node
-          image: us.gcr.io/<google_project_id>/hello-node:v1
+          image: us.gcr.io/tidy-agency-113505/hello-node:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
